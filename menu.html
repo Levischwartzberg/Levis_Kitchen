@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> Menu </title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <style>
+        div.container-fluid {
+          background-color: #ffddcc;
+        }
+        table h2, h3 {
+          font-family: 'Fredericka the Great', cursive;
+        }
+        tr.cocktails {
+          text-align: left;
+        }
+        tr.cocktails:nth-child(even){
+          background-color: #ffccb3;
+          border-color: #ffccb3;
+        }
+        tr.cocktails:nth-child(odd){
+          background-color: #ffddcc;
+        }
+        section.food {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        th {
+          background-color: #bfbfbf;
+          text-align: left;
+        }
+      </style>
+
+
+</head>
+<body>
+    <h5> Menu </h5>
+
+    <!-- Page header -->
+    <div class="container-fluid" style="background-color: #B0C4DE">
+      <header>
+        <h1> Levi's Kitchen </h1>
+      </header>
+    </div>
+
+    <!-- Links -->
+    <nav>
+      <span> <a href="home.html" class="btn badge-pill fa fa-home"></a></span>
+      <span> <a href="menu.html" class="btn badge-pill">Menu</a></span>
+      <span> <a href="contact.html" class="btn badge-pill">Contact Us</a></span>
+    </nav>
+
+    <!-- Bootstrap grid for menu to allow for nice stacking and no overlap -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- mini table included to allow background color for "food" heading to stretch further -->
+          <table width="100%">
+            <th><h2>Food</h2></th>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <!-- col-md used to allow the items to stack one on another when the window is thin -->
+        <div class="col-md">
+          <section class="food">
+            <article id="omelette">
+              <h3> <strong>Omelette</strong> </h3>
+              <span>
+              <h5> <i> A soft omelette full of veggies </i> </h5>
+              <span>
+              <p> Spinach, Mushrooms, Brussels Sprouts, Gouda.
+              Served with sourdough-wheat toast </p>
+              <span>
+              <p> 8 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="toad-in-the-hole">
+              <h3> <strong>Toad in the Hole</strong> </h3>
+              <span>
+              <h5> <i> An egg fried into our home-baked toast </i> </h5>
+              <span>
+              <p> Fried egg within our sourdough toast.
+                Served with a side of beets, and your choice of bacon or sausage.
+              </p> <span>
+              <p> 9 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="quesadillas">
+              <h3> <strong>Breakfast Quesadillas</strong> </h3>
+              <span>
+              <h5> <i> Three warm, delicious quesadillas </i> </h5>
+              <span>
+              <p> Scrambled Eggs, Black Beans, Arugula, Cheddar, Tomatoes.
+                Served with a side of sweet potatoes.
+              </p> <span>
+              <p> 9 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="hash">
+              <h3> <strong>Breakfast Hash</strong> </h3>
+              <span>
+              <h5> <i> A classic style hash with a twist </i> </h5>
+              <span>
+              <p> Hash made with beets, carrots, sweet potatoes, onions, and cheddar.
+                Served with two eggs of any style. Toast. Add Sausage - 2
+              </p> <span>
+              <p> 10 </p>
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- new row defined here so other items automatically arrange into a group of 4 -->
+      <div class="row">
+        <div class="col-md">
+          <section class="food">
+            <article id="tacos">
+              <h3> <strong>Walleye Tacos</strong> </h3>
+              <span>
+              <h5> <i> Classic fish tacos </i> </h5>
+              <span>
+              <p> Arugula, Cheddar, Tomatoes, Homemade Aioli.
+                Choice of soup or side salad.
+              </p>
+              <span>
+              <p> 10 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="trout">
+              <h3> <strong>Lake Trout</strong> </h3>
+              <span>
+              <h5> <i> Fresh caught trout </i> </h5>
+              <span>
+              <p> Lake trout baked with rosemary, sage, and pine needles.
+                Side of wild rice and foraged mushrooms.
+              </p> <span>
+              <p> 16 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="burger">
+              <h3> <strong>Cheeseburger</strong> </h3>
+              <span>
+              <h5> <i> A delectible burger </i> </h5>
+              <span>
+              <p> Swiss, Arugula, Mushrooms, Homemade Aioli.
+                Served with a side salad or carrot fries.
+              </p> <span>
+              <p> 11 </p>
+            </article>
+          </section>
+        </div>
+        <div class="col-md">
+          <section class="food">
+            <article id="rice">
+              <h3> <strong>Vegetable Wild Rice</strong> </h3>
+              <span>
+              <h5> <i> Quintessentially Minnesotan </i> </h5>
+            </span>
+              <p> Brussels Sprouts, Mushrooms, Kale, Onions, Pine Nuts.
+               Add Chicken - 1.  Add Salmon - 3 </p>
+              <p> 10 </p>
+            </article>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table width="100%">
+            <th><h2>Cocktails</h2></th>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12">
+            <!-- drinks stacked in a table to match the required format. Only needs one row because there is only one drink per row in the table. -->
+            <table width="100%">
+              <tr class="cocktails">
+                <td colspan="1"> <h3> Old Fashioned </h3> </td>
+                <td> <i>Whiskey, juniper bitters, pine needles </i> </td>
+                <td colspan="2"> <p> 8 </p> </td>
+              </tr>
+              <tr class="cocktails">
+                <td colspan="1"> <h3> Superior </h3> </td>
+                <td> <i>Juniper gin, tonic, mint </i> </td>
+                <td colspan="2"> <p> 8 </p> </td>
+              </tr>
+              <tr class="cocktails">
+                <td colspan="1"> <h3> Voyageur </h3> </td>
+                <td> <i>Juniper gin, absinthe, cucumber </i> </td>
+                <td colspan="2"> <p> 9 </p> </td>
+              </tr>
+              <tr class="cocktails">
+                <td colspan="1"> <h3> Blue </h3> </td>
+                <td> <i>Vodka, blueberry syrup, violet flowers </i> </td>
+                <td colspan="2"> <p> 8 </p> </td>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+
+    <br />
+
+    <footer>
+      <p> 75 Superior Lane, Grand Views, MN, 55444 </p>
+        <br/>
+      <p> 612-963-0500 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/*background color for the body of every page */
+body {
+    background-color: #f0f8ff;
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* page header for restaurant title styles */
+  header {
+    background-color: #b0c4de;
+    text-align: center;
+  }
+  
+  /*font for h1 and the headers */
+  header, h1 {
+    font-size: 2em;
+    font-family: 'Fredericka the Great', cursive;
+  }
+  
+  /* link styles. */
+  nav {
+    background-color: #81a2ca;
+    padding-top: 5px;
+    padding-bottom: 45px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  /* underline and bolding for hover */
+  nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  nav a {
+    background-color: #ffddcc;
+    color: #191970;
+    padding: 1px;
+    border: thin solid #0d1f2d;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 35px;
+    float:left;
+    text-decoration: none;
+  }
+  
+  /*visted links are black*/
+  nav a:visited{
+    color: black;
+  }
+  
+  /* active links should have no underline or other decorations */
+  nav a:active{
+    text-decoration: none;
+  }
+  
+  /* footer styling to apply to all pages */
+  footer {
+    background-color: #1a0d00;
+    color: #cce6ff;
+    height: 60px;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+  }
+  
+  img {
+    margin-right: 20px;
+  }
+  

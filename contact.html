@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact Us</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/scripts.js">
+    </script>
+
+    <!-- Large jumbotron announcing that the user should enable javascript if it is disabled -->
+    <noscript>
+      <div class="jumbotron">
+        <h4> Your browser does not support javascript or you have javascript disabled. Enable javascript for full functionality. </h4>
+      </div>
+    </noscript>
+</head>
+
+<body>
+    <h5> Contact Us </h5>
+
+    <header>
+      <h1> Levi's Kitchen </h1>
+    </header>
+
+    <nav>
+      <span> <a href="home.html" class="btn badge-pill fa fa-home"></a></span>
+      <span> <a href="menu.html" class="btn badge-pill">Menu</a></span>
+      <span> <a href="cantact.html" class="btn badge-pill">Contact Us</a></span>
+    </nav>
+
+    <!-- Form calls the infoValid function on load -->
+    <form name="contactUs" onsubmit="return infoValid();" class="form-group">
+      <label class="req" for="name"> *Name: </label>
+      <input type="text" name="myTextInput" id="name" placeholder="First Last"/><br />
+      <label class="req" for="email"> *Email: </label>
+      <input type="email" name="myTextInput" id="email" placeholder="abc123@gmail.com"/><br />
+      <label class="req" for="phonenumber"> *Phone Number: </label>
+      <input type="phonenumber" name="myTextInput" id="phone" placeholder="123-456-7890"/><br />
+      <br />
+
+      <label class="req" for="reason">Reason For Inquiry:</label>
+      <select name="reason">
+        <option value="default" selected> Catering </option>
+        <option value="private"> Private Party </option>
+        <option value="feedback"> Feedback </option>
+        <option value="other"> Other </option>
+      </select>
+
+        <br />
+        <label for="comment">Additional Comments</label>
+        <br />
+          <textarea name="comments" rows="5" cols="40"></textarea>
+        <br />
+
+      <label for="been_to">Have you been to the restaurant?</label>
+      <br />
+        Yes <input type="radio" name="answer" value="yes">
+        No <input type="radio" name="answer" value="no"> <br/>
+
+      <label class="req" for="days">*Best days to contact you:</label>
+        <input type="checkbox" name="day" value="Monday" id="monday"> Monday
+        <input type="checkbox" name="day" value="Tuesday" id="tuesday"> Tuesday
+        <input type="checkbox" name="day" value="Wednesday" id="wednesday"> Wednesday
+        <input type="checkbox" name="day" value="Thursday" id="thursday"> Thursday
+        <input type="checkbox" name="day" value="Friday" id="friday"> Friday
+
+      <br /> <br />
+      <button type="submit" class="btn btn-default" name="submit"> Send Request </button>
+
+    </form>
+
+    <!-- Preferred * symbol to indicate a required field -->
+    <p> (* indicates required field) </p>
+
+    <br/>
+
+    <footer>
+      <p> 75 Superior Lane, Grand Views, MN, 55444 </p>
+      <span>
+      <p> 612-963-0500 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
